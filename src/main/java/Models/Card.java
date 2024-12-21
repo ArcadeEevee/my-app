@@ -1,23 +1,22 @@
 package Models;
 
 
+import Logic.Pair;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.events.SelectionListener;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Display;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
 public class Card {
 
     private static int currentIds;
+    private static int turnedUpCards;
 
     private int id;
     private Image backtCoverIMG;
     private Image frontCoverIMG;
-    private boolean frontVisible;
+    private boolean selected;
     private Button button;
 
 
@@ -27,7 +26,7 @@ public class Card {
 
         this.backtCoverIMG = new Image(display, pathBackCover);
         this.frontCoverIMG = new Image(display, pathFrontCover);
-        this.frontVisible = false;
+        this.selected = false;
 
         countID();
     }
@@ -35,6 +34,8 @@ public class Card {
     public int getId(){
         return id;
     }
+
+    public boolean getSelected(){return selected;}
 
     public Button getButton(){
         return button;
@@ -46,27 +47,43 @@ public class Card {
         setFrontHidden();
     }
 
+    // sets Front side visible
     public void setFrontVisible(){
 
         button.setImage(frontCoverIMG);
-        frontVisible = true;
+        selected = true;
     }
 
+    // sets back side visible
     public void setFrontHidden(){
 
         button.setImage(backtCoverIMG);
-        frontVisible = false;
+        selected = false;
     }
 
     public void turnCardAround(){
 
-        if(!frontVisible){
+        // Check if card front is up
+        // and if two cards are already open
+        if (!selected && turnedUpCards < 2) {
+            // Show front side of the card and increase the counter for open Cards
+            increaseTurnedUpCards();
             setFrontVisible();
-        } else {
+            Pair.addToSelectedCards(this);
+            // Check if card front is visible
+        } else if(selected) {
+            // if it is turn the card around and decrease the counter
+            decreaseTurnedUpCards();
             setFrontHidden();
+            Pair.removeFromSelectedCards(this);
+        }
+
+        if(turnedUpCards == 2){
+            Pair.compareCards();
         }
     }
 
+    // add Event Listeners to the button
     public SelectionListener setUpButtonListener(){
 
         return new SelectionListener() {
@@ -82,7 +99,30 @@ public class Card {
         };
     }
 
+    public void remove(){
+        button.setBounds(0,0,0,0);
+    }
+
+    // each Card has to have its own ID
     private static void countID(){
         currentIds += 1;
+    }
+
+    public static void resetTurnedUpCards(){
+        turnedUpCards = 0;
+    }
+
+    public static void increaseTurnedUpCards(){
+
+        if(turnedUpCards < 2){
+            turnedUpCards += 1;
+        }
+    }
+
+    public static void decreaseTurnedUpCards(){
+
+        if(turnedUpCards > 0){
+            turnedUpCards -= 1;
+        }
     }
 }

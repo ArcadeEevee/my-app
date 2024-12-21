@@ -18,16 +18,16 @@ public class Shuffle {
 
         int[] idList = new int[idCount];
 
-        for(int i = 0; i < idList.length; i++){
+        for(int i = 0; i < idList.length - 1; i++){
 
             boolean check = true;
 
             // Get a random number in range of available cards
             int randomNumber = rand.nextInt(idCount);
 
-            // Checking randomNumber to make sure there are no duplicates
+            // Checking randomNumber against list to look if it's already in there
             for(int j : idList){
-                if(idList[j] == randomNumber){
+                if(j == randomNumber){
                     check = false;
                     break;
                 }
