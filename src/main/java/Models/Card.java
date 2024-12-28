@@ -13,7 +13,8 @@ public class Card {
     private static int currentIds;
     private static int turnedUpCards;
 
-    private int id;
+    private final int id;
+
     private Image backtCoverIMG;
     private Image frontCoverIMG;
     private boolean selected;
@@ -34,8 +35,6 @@ public class Card {
     public int getId(){
         return id;
     }
-
-    public boolean getSelected(){return selected;}
 
     public Button getButton(){
         return button;
@@ -99,7 +98,7 @@ public class Card {
         };
     }
 
-    public void remove(){
+    public void setCardInvisible(){
         button.setBounds(0,0,0,0);
     }
 
@@ -111,6 +110,8 @@ public class Card {
     public static void resetTurnedUpCards(){
         turnedUpCards = 0;
     }
+
+    public static void resetIDs(){currentIds = 0;}
 
     public static void increaseTurnedUpCards(){
 

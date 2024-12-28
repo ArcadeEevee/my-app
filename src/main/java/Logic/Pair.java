@@ -36,6 +36,8 @@ public class Pair {
         return allPairs;
     }
 
+    public static void resetAllPairs(){ allPairs = new ArrayList<>(); }
+
     public static void addToSelectedCards(Card card){
 
         Card check = selectedCards[0];
@@ -63,13 +65,13 @@ public class Pair {
         // Check if selected Cards are a pair
         for(Pair pair : allPairs) {
             if (pair.card1.getId() == selectedCards[0].getId() && pair.card2.getId() == selectedCards[1].getId()) {
-                selectedCards[0].remove();
-                selectedCards[1].remove();
+                selectedCards[0].setCardInvisible();
+                selectedCards[1].setCardInvisible();
                 resetSelectedCards();
                 break;
             } else if (pair.card1.getId() == selectedCards[1].getId() && pair.card2.getId() == selectedCards[0].getId()) {
-                selectedCards[0].remove();
-                selectedCards[1].remove();
+                selectedCards[0].setCardInvisible();
+                selectedCards[1].setCardInvisible();
                 resetSelectedCards();
                 break;
             }

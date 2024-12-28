@@ -1,6 +1,8 @@
 package Frontend;
 
 import org.eclipse.swt.SWT;
+import org.eclipse.swt.events.SelectionEvent;
+import org.eclipse.swt.events.SelectionListener;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.ToolBar;
@@ -22,7 +24,10 @@ public class Menu {
         menu.setLayoutData(gridMenu);
 
         option_one = createOption(menu);
+        option_one.setText("new game");
+
         option_two = createOption(menu);
+        option_two.setText("new game with new cards");
 
     }
 
@@ -30,4 +35,14 @@ public class Menu {
         option = new ToolItem(menu, SWT.PUSH);
         return option;
     }
+
+    public ToolItem getOption_One(){
+        return option_one;
+    }
+
+    public ToolItem getOption_two(){
+        return option_two;
+    }
+
+    // add Event Listeners to the button
 }

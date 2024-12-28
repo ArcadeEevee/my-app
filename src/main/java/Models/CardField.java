@@ -4,6 +4,7 @@ import Logic.Pair;
 import Logic.Shuffle;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridData;
+import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Group;
@@ -30,6 +31,7 @@ public class CardField {
 
     public void placeCards(Group groupCards, GridData gridData){
 
+        // Places Cards equals to their shuffled positions
         for(int i : shuffledCardsPosition) {
             for (Pair pair : Pair.getAllPairs()) {
                 for (Card card : pair.getCards()) {
@@ -40,7 +42,17 @@ public class CardField {
                 }
             }
         }
-
     }
+
+    public static void clearField(){
+        for (Pair pair : Pair.getAllPairs()) {
+            for (Card card : pair.getCards()) {
+                card.getButton().dispose();
+            }
+        }
+        Pair.resetAllPairs();
+        Card.resetIDs();
+    }
+
 
 }
