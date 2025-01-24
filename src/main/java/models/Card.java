@@ -173,4 +173,12 @@ public class Card {
       turnedUpCards -= 1;
     }
   }
+
+  public static int getUnsignedId() {
+    return currentIds;
+  }
+
+  public static int getTurnedUpCardsAmount() {
+    return turnedUpCards;
+  }
 }

@@ -30,7 +30,7 @@ public class ShuffleTest {
     System.out.println(text.substring(0, text.length() - 2));
 
     // Checks that every Card got shuffled
-    assertEquals(10, res.length, "Ressult should be double the amount of pairs (here 5 pairs so it should be 10)");
+    assertEquals(10, res.length, "Result should be double the amount of pairs (here 5 pairs so it should be 10)");
 
   }
 

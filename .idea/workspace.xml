@@ -5,25 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ba8f326-ddde-4424-bfb4-badc990e4ef8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Images/Karte_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/images/Karte_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Images/Karte_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/images/Karte_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Images/Karte_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/images/Karte_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Images/Karte_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/images/Karte_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Images/Karte_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/images/Karte_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Images/Karte_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/images/Karte_6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Images/blank.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/images/blank.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Frontend/Gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frontend/Gui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Frontend/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frontend/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Logic/Pair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/Pair.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Logic/Shuffle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/Shuffle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/CardField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/CardField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appMain/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/fh/albsig/id91652/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Frontend/GuiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/frontend/GuiTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Logic/ShuffleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/logic/ShuffleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frontend/Gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frontend/Gui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/frontend/GuiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/frontend/GuiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/logic/ShuffleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/logic/ShuffleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/checkstyle-cachefile" beforeDir="false" afterPath="$PROJECT_DIR$/target/checkstyle-cachefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/frontend/Gui$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/frontend/Gui$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/frontend/Gui$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/frontend/Gui$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/frontend/Gui.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/frontend/Gui.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/models/Card.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/models/Card.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/my-app-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/my-app-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/pmd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/pmd.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/frontend/GuiTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/frontend/GuiTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/ShuffleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/logic/ShuffleTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,10 +61,14 @@
     "JUnit.AppTest.additionTest.executor": "Run",
     "JUnit.AppTest.executor": "Run",
     "JUnit.AppTest.shouldAnswerWithTrue.executor": "Run",
+    "JUnit.CardsTest.turnCardAroundTest.executor": "Run",
     "JUnit.GuiTest.calculateColumnSizeTest.executor": "Run",
     "JUnit.GuiTest.executor": "Run",
     "JUnit.GuiTest.getFileTest.executor": "Run",
+    "JUnit.GuiTest.test1.executor": "Run",
+    "JUnit.GuiTest.test2.executor": "Run",
     "JUnit.ShuffleTest.shuffleCardsTest.executor": "Run",
+    "Maven.my-app [Clean,mocking].executor": "Run",
     "Maven.my-app [archetype:generate...].executor": "Run",
     "Maven.my-app [checkstyle:check].executor": "Run",
     "Maven.my-app [checkstyle:checkstyle].executor": "Run",
@@ -102,27 +102,15 @@
       <command value="mvn archetype:generate -DgroupId=com.mycompany.app \ -DartifactId=myswingapp \ -Dversion=1.0-SNAPSHOT" />
       <command value="mvn archetype:generate -DgroupId=com.mycompany.app \ -DartifactId=myswingapp" />
       <command value="mvn checkstyle:checkstyle" />
-      <command value="mvn pmd:pmd" />
-      <command value="mvn spotbugs:check" />
       <command value="mvn clean" />
+      <command value="mvn Clean mocking" />
       <command value="mvn clean install" />
+      <command value="mvn pmd:pmd" />
       <command value="mvn checkstyle:check" />
+      <command value="mvn spotbugs:check" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.de.fh.albsig.id91652.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="appmain.Main" />
-      <module name="my-app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="appmain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.GuiTest.test2">
     <configuration name="de.fh.albsig.id91652.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="de.fh.albsig.id91652.Main" />
       <module name="my-app" />
@@ -132,21 +120,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GuiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="my-app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="frontend.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Frontend" />
-      <option name="MAIN_CLASS_NAME" value="frontend.GuiTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -167,6 +140,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GuiTest.resetGameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="my-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="frontend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="frontend" />
+      <option name="MAIN_CLASS_NAME" value="frontend.GuiTest" />
+      <option name="METHOD_NAME" value="resetGameTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GuiTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="my-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="frontend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="frontend" />
+      <option name="MAIN_CLASS_NAME" value="frontend.GuiTest" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ShuffleTest.shuffleCardsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="my-app" />
       <extension name="coverage">
@@ -175,7 +180,7 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Logic" />
+      <option name="PACKAGE_NAME" value="logic" />
       <option name="MAIN_CLASS_NAME" value="logic.ShuffleTest" />
       <option name="METHOD_NAME" value="shuffleCardsTest" />
       <option name="TEST_OBJECT" value="method" />
@@ -185,11 +190,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GuiTest.test2" />
+        <item itemvalue="JUnit.GuiTest.resetGameTest" />
         <item itemvalue="Application.de.fh.albsig.id91652.Main" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.ShuffleTest.shuffleCardsTest" />
         <item itemvalue="JUnit.GuiTest.calculateColumnSizeTest" />
-        <item itemvalue="JUnit.GuiTest" />
       </list>
     </recent_temporary>
   </component>

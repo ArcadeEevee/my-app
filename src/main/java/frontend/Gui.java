@@ -139,6 +139,16 @@ public class Gui {
   }
 
   /**
+   * resets the game.
+   */
+  public void resetGame() {
+    CardField.clearField();
+    groupCards.dispose();
+    createCardArea();
+    shell.layout();
+  }
+
+  /**
   * Listener for the Menü Buttons.
   * Menu Button 1.
   */
@@ -147,19 +157,12 @@ public class Gui {
     return new SelectionListener() {
         @Override
         public void widgetSelected(SelectionEvent selectionEvent) {
-            // resets the game
-            CardField.clearField();
-            groupCards.dispose();
-            createCardArea();
-            shell.layout();
+          resetGame();
         }
 
         @Override
         public void widgetDefaultSelected(SelectionEvent selectionEvent) {
-            CardField.clearField();
-            groupCards.dispose();
-            createCardArea();
-            shell.layout();
+          resetGame();
         }
     };
   }
