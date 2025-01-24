@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4ba8f326-ddde-4424-bfb4-badc990e4ef8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Images/Karte_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/images/Karte_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Images/Karte_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/images/Karte_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Images/Karte_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/images/Karte_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Images/Karte_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/images/Karte_4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Images/Karte_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/images/Karte_5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Images/Karte_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/images/Karte_6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Images/blank.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/images/blank.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Frontend/Gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frontend/Gui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Frontend/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frontend/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Logic/Pair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/Pair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Logic/Shuffle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/Shuffle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Models/CardField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/CardField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/appMain/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/fh/albsig/id91652/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Frontend/GuiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/frontend/GuiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Logic/ShuffleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/logic/ShuffleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/pmd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/pmd.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2neeNHMaDPScDS8ye8TsiNbZOQn" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.App.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.de.fh.albsig.id91652.Main.executor": "Run",
+    "JUnit.AppTest.additionTest.executor": "Run",
+    "JUnit.AppTest.executor": "Run",
+    "JUnit.AppTest.shouldAnswerWithTrue.executor": "Run",
+    "JUnit.GuiTest.calculateColumnSizeTest.executor": "Run",
+    "JUnit.GuiTest.executor": "Run",
+    "JUnit.GuiTest.getFileTest.executor": "Run",
+    "JUnit.ShuffleTest.shuffleCardsTest.executor": "Run",
+    "Maven.my-app [archetype:generate...].executor": "Run",
+    "Maven.my-app [checkstyle:check].executor": "Run",
+    "Maven.my-app [checkstyle:checkstyle].executor": "Run",
+    "Maven.my-app [clean,install].executor": "Run",
+    "Maven.my-app [clean].executor": "Run",
+    "Maven.my-app [jxr:jxr].executor": "Run",
+    "Maven.my-app [package].executor": "Run",
+    "Maven.my-app [pmd:pmd].executor": "Run",
+    "Maven.my-app [spotbugs:check].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/studium/Sem 5/Proffesionele Java Entwicklung/my-app/src",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\studium\Sem 5\Proffesionele Java Entwicklung\my-app\src" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn package" />
+      <command value="mvn jxr:jxr" />
+      <command value="mvn archetype:generate -DgroupId=com.mycompany.app \ -DartifactId=myswingapp \ -Dversion=1.0-SNAPSHOT" />
+      <command value="mvn archetype:generate -DgroupId=com.mycompany.app \ -DartifactId=myswingapp" />
+      <command value="mvn checkstyle:checkstyle" />
+      <command value="mvn pmd:pmd" />
+      <command value="mvn spotbugs:check" />
+      <command value="mvn clean" />
+      <command value="mvn clean install" />
+      <command value="mvn checkstyle:check" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.de.fh.albsig.id91652.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="appmain.Main" />
+      <module name="my-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="appmain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="de.fh.albsig.id91652.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="de.fh.albsig.id91652.Main" />
+      <module name="my-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.fh.albsig.id91652.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GuiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="my-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="frontend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Frontend" />
+      <option name="MAIN_CLASS_NAME" value="frontend.GuiTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GuiTest.calculateColumnSizeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="my-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="frontend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Frontend" />
+      <option name="MAIN_CLASS_NAME" value="frontend.GuiTest" />
+      <option name="METHOD_NAME" value="calculateColumnSizeTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShuffleTest.shuffleCardsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="my-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="logic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Logic" />
+      <option name="MAIN_CLASS_NAME" value="logic.ShuffleTest" />
+      <option name="METHOD_NAME" value="shuffleCardsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.de.fh.albsig.id91652.Main" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ShuffleTest.shuffleCardsTest" />
+        <item itemvalue="JUnit.GuiTest.calculateColumnSizeTest" />
+        <item itemvalue="JUnit.GuiTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4ba8f326-ddde-4424-bfb4-badc990e4ef8" name="Changes" comment="" />
+      <created>1729337926954</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729337926954</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

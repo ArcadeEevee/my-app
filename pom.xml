@@ -103,6 +103,7 @@
             <rulesets>
               <ruleset>MyOwnRuleset.xml</ruleset>
             </rulesets>
+            <linkXRef>false</linkXRef>
           </configuration>
           <executions>
             <execution>
