@@ -18,12 +18,7 @@ public class Gui {
 
     private Display display;
     private Shell shell;
-    private Menu menu;
     private Group groupCards;
-    private GridData gridCardData;
-    private GridData gridGroupCardsData;
-    private GridLayout cardGrid;
-    private CardField cardField;
     private ArrayList<String> currentCards;
     private int currentNumberOfColumns;
 
@@ -31,23 +26,26 @@ public class Gui {
 
     public Gui(){
 
+        // standard set of cards
         currentCards = new ArrayList<>(Arrays.asList("src/main/Images/blank.png", "src/main/Images/Karte_1.png", "src/main/Images/Karte_2.png", "src/main/Images/Karte_3.png", "src/main/Images/Karte_4.png", "src/main/Images/Karte_5.png", "src/main/Images/Karte_6.png"));
+        // calculates the number of rows needed
         currentNumberOfColumns = calculateColumnSize((currentCards.size() - 1)*2);
+        // Creates the Shell, Menu and the Card Area
         createShell();
     }
 
     private void createShell(){
 
-        //Create Shell
+        // Create Shell
         display = new Display();
         shell = new Shell();
         shell.setLayout(new GridLayout(3, true));
         shell.setMinimumSize(750, 500);
 
         // Create Menu
-        menu = new Menu(shell, 3);
+        Menu menu = new Menu(shell, 3);
         menu.getOption_One().addSelectionListener(startNewGameListener());
-        menu.getOption_two().addSelectionListener(startNewGameWithNewCardsListener());
+        menu.getOptionTwo().addSelectionListener(startNewGameWithNewCardsListener());
 
         // Creates a space for the cards and fills it with cards
         createCardArea();
@@ -57,15 +55,15 @@ public class Gui {
 
         // Create and set Card Area
         groupCards = new Group(shell, SWT.NO_RADIO_GROUP | SWT.SHADOW_ETCHED_IN);
-        gridCardData = new GridData(SWT.FILL, SWT.FILL, true, true, 1,1);
-        gridGroupCardsData = new GridData(SWT.FILL, SWT.FILL, true, true, 2, 1);
-        cardGrid = new GridLayout(currentNumberOfColumns, true);
+        GridData gridCardData = new GridData(SWT.FILL, SWT.FILL, true, true, 1, 1);
+        GridData gridGroupCardsData = new GridData(SWT.FILL, SWT.FILL, true, true, 2, 1);
+        GridLayout cardGrid = new GridLayout(currentNumberOfColumns, true);
 
         groupCards.setLayout(cardGrid);
         groupCards.setLayoutData(gridGroupCardsData);
 
         // Creating cards, Shuffle those, and place them on the Grid
-        cardField = new CardField(currentCards, display);
+        CardField cardField = new CardField(currentCards, display);
         cardField.placeCards(groupCards, gridCardData);
     }
 
@@ -82,6 +80,7 @@ public class Gui {
             return chooser.getSelectedFile().getPath();
         } else {
             throw new IllegalArgumentException("No File Selected");
+
         }
     }
 
@@ -116,7 +115,7 @@ public class Gui {
         String pathBackCover = getPath();
         paths.add(pathBackCover);
 
-        // Adds Front Covers until at least 4 are chosen and not more than 10
+        // Adds Front Covers until at least 4 are chosen
         while(paths.size() < 5){
             paths.addAll(getPaths());
         }
@@ -126,7 +125,7 @@ public class Gui {
 
     // Listener for the Menü Buttons
 
-    // Button 1
+    // Menu Button 1
     public SelectionListener startNewGameListener(){
 
         return new SelectionListener() {
@@ -149,7 +148,7 @@ public class Gui {
         };
     }
 
-    // Button 2
+    // Menu Button 2
     public SelectionListener startNewGameWithNewCardsListener(){
 
         return new SelectionListener() {
@@ -174,6 +173,8 @@ public class Gui {
         };
     }
 
+    // Calculates the number of Rows needed
+    // The number of rows is the exponent from 2^x if the number of cards is smaller the square number and the smallest exponent
     public int calculateColumnSize(int amountOfCards){
         int counter = 0;
         while(amountOfCards > Math.pow(2, counter)){

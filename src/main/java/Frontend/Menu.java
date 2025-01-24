@@ -1,8 +1,6 @@
 package Frontend;
 
 import org.eclipse.swt.SWT;
-import org.eclipse.swt.events.SelectionEvent;
-import org.eclipse.swt.events.SelectionListener;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.ToolBar;
@@ -10,39 +8,38 @@ import org.eclipse.swt.widgets.ToolItem;
 
 public class Menu {
 
-    private ToolBar menu;
-    private ToolItem option;
-    private ToolItem option_one;
-    private ToolItem option_two;
+    private final ToolItem optionOne;
+    private final ToolItem optionTwo;
 
     public Menu(Shell shell, int width){
 
-        menu = new ToolBar(shell, SWT.HORIZONTAL);
+        // Creates and Places Menu Toolbar
+        ToolBar menu = new ToolBar(shell, SWT.HORIZONTAL);
         GridData gridMenu = new GridData(GridData.HORIZONTAL_ALIGN_FILL);
         gridMenu.horizontalSpan = width;
 
         menu.setLayoutData(gridMenu);
 
-        option_one = createOption(menu);
-        option_one.setText("new game");
+        // Creates and names Menu Options
+        optionOne = createOption(menu);
+        optionOne.setText("new game");
 
-        option_two = createOption(menu);
-        option_two.setText("new game with new cards");
+        optionTwo = createOption(menu);
+        optionTwo.setText("new game with new cards");
 
     }
 
+    // function to Create a menu option
     private ToolItem createOption(ToolBar menu){
-        option = new ToolItem(menu, SWT.PUSH);
-        return option;
+        return new ToolItem(menu, SWT.PUSH);
     }
 
+    // Getter methods for the Two option Buttons
     public ToolItem getOption_One(){
-        return option_one;
+        return optionOne;
     }
 
-    public ToolItem getOption_two(){
-        return option_two;
+    public ToolItem getOptionTwo(){
+        return optionTwo;
     }
-
-    // add Event Listeners to the button
 }

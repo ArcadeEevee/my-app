@@ -5,19 +5,23 @@ import java.util.Random;
 
 public class Shuffle {
 
-    private int idCount;
-    private Random rand;
+    private final int idCount;
+    private final Random rand;
 
 
+    // Shuffle needs the amount of total cards
     public Shuffle(ArrayList<Pair> pairs){
         idCount = pairs.size()*2;
         rand = new Random();
     }
 
+    // Shuffles get Shuffled
     public int[] shuffleCards(){
 
+        // Creating an array with the total amount of cards
         int[] idList = new int[idCount];
 
+        // fills that array with a shuffled list of ID's
         for(int i = 0; i < idList.length - 1; i++){
 
             boolean check = true;
@@ -33,11 +37,12 @@ public class Shuffle {
                 }
             }
 
-            // No duplicate -> continue with next position
-            // Duplicate -> repeat this position
+            // Checking for duplicate
             if(check){
+                // No duplicate -> continue with next position
                 idList[i] = randomNumber;
             }else{
+                // Duplicate -> repeat this position
                 i--;
             }
         }

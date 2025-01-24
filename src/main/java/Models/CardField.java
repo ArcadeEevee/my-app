@@ -4,7 +4,6 @@ import Logic.Pair;
 import Logic.Shuffle;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridData;
-import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Group;
@@ -13,7 +12,7 @@ import java.util.ArrayList;
 
 public class CardField {
 
-    private int[] shuffledCardsPosition;
+    private final int[] shuffledCardsPosition;
 
     public CardField(ArrayList<String> coverPaths, Display display) {
 
@@ -44,6 +43,7 @@ public class CardField {
         }
     }
 
+    // Deletes all Cards and rests the game
     public static void clearField(){
         for (Pair pair : Pair.getAllPairs()) {
             for (Card card : pair.getCards()) {
@@ -53,6 +53,5 @@ public class CardField {
         Pair.resetAllPairs();
         Card.resetIDs();
     }
-
 
 }

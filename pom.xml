@@ -98,6 +98,12 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-pmd-plugin</artifactId>
           <version>3.25.0</version>
+          <configuration>
+            <format>xml</format>
+            <rulesets>
+              <ruleset>MyOwnRuleset.xml</ruleset>
+            </rulesets>
+          </configuration>
           <executions>
             <execution>
               <phase>validate</phase>

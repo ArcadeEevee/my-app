@@ -9,6 +9,7 @@ public class GuiTest {
 
     @Test
     public void getFileTest(){
+        // Tests if the Cards can be selected through a new window
 
         Gui gui = new Gui();
 
@@ -17,6 +18,7 @@ public class GuiTest {
 
     @Test
     public void calculateColumnSizeTest(){
+        // Tests if the number of needed is Calculated correctly
 
         Gui gui = new Gui();
 

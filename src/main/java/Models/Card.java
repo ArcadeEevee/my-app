@@ -10,37 +10,48 @@ import org.eclipse.swt.widgets.Display;
 
 public class Card {
 
+    private static final int MAX_NUMBER_OF_TURNED_UP_CARDS = 2;
     private static int currentIds;
     private static int turnedUpCards;
 
+
     private final int id;
 
-    private Image backtCoverIMG;
-    private Image frontCoverIMG;
+    private final Image backCoverIMG;
+    private final Image frontCoverIMG;
     private boolean selected;
     private Button button;
 
 
+    // Creates a card
     public Card(String pathBackCover, String pathFrontCover, Display display){
 
+        // Get latest ID
         this.id = currentIds;
 
-        this.backtCoverIMG = new Image(display, pathBackCover);
+        // defines the look of the cards
+        this.backCoverIMG = new Image(display, pathBackCover);
         this.frontCoverIMG = new Image(display, pathFrontCover);
         this.selected = false;
 
+        // Updates ID by increasing it for the next card
         countID();
     }
 
+    // returns the ID of the card
     public int getId(){
         return id;
     }
 
+    // returns the Button
     public Button getButton(){
         return button;
     }
 
+    // Creates a Button and gives it a Selection Listener
+    // this button is the Card you can click on so the back side is shown
     public void setButton(Button button){
+
         this.button = button;
         this.button.addSelectionListener(setUpButtonListener());
         setFrontHidden();
@@ -56,7 +67,7 @@ public class Card {
     // sets back side visible
     public void setFrontHidden(){
 
-        button.setImage(backtCoverIMG);
+        button.setImage(backCoverIMG);
         selected = false;
     }
 
@@ -64,11 +75,12 @@ public class Card {
 
         // Check if card front is up
         // and if two cards are already open
-        if (!selected && turnedUpCards < 2) {
+        if (!selected && turnedUpCards < MAX_NUMBER_OF_TURNED_UP_CARDS) {
             // Show front side of the card and increase the counter for open Cards
             increaseTurnedUpCards();
             setFrontVisible();
             Pair.addToSelectedCards(this);
+
             // Check if card front is visible
         } else if(selected) {
             // if it is turn the card around and decrease the counter
@@ -77,12 +89,13 @@ public class Card {
             Pair.removeFromSelectedCards(this);
         }
 
-        if(turnedUpCards == 2){
+        // if 2 Cards are turned up it compares these two
+        if(turnedUpCards == MAX_NUMBER_OF_TURNED_UP_CARDS){
             Pair.compareCards();
         }
     }
 
-    // add Event Listeners to the button
+    // adds Selection Listener to the Button
     public SelectionListener setUpButtonListener(){
 
         return new SelectionListener() {
@@ -102,24 +115,30 @@ public class Card {
         button.setBounds(0,0,0,0);
     }
 
-    // each Card has to have its own ID
+    // increases the ID by to a free ID number
     private static void countID(){
         currentIds += 1;
     }
 
+    // resets the amount of turned up cards
     public static void resetTurnedUpCards(){
         turnedUpCards = 0;
     }
 
+    // resets all the ID counter
     public static void resetIDs(){currentIds = 0;}
 
+    // Two functions to keep track of the number off currently turned up cards
+
+    // one increases the number
     public static void increaseTurnedUpCards(){
 
-        if(turnedUpCards < 2){
+        if(turnedUpCards < MAX_NUMBER_OF_TURNED_UP_CARDS){
             turnedUpCards += 1;
         }
     }
 
+    // and the second decreases the number
     public static void decreaseTurnedUpCards(){
 
         if(turnedUpCards > 0){
